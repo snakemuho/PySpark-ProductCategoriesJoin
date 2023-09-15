@@ -26,5 +26,5 @@ category_df = spark.read.csv("category.csv", header = True, inferSchema=True)
 product_category_df = spark.read.csv("product_category.csv", header = True, inferSchema=True)
 
 # Передаём датафреймы в метод
-result_df = join_product_and_category(product_df,category_df,product_category_df)
+result_df = join_product_and_category(product_df, category_df, product_category_df)
 result_df
