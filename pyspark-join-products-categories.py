@@ -12,7 +12,7 @@ spark = SparkSession.builder.master("local[*]").getOrCreate()
 spark.conf.set("spark.sql.repl.eagerEval.enabled", True) # Property used to format output tables better
 
 # Метод, в который передаются датафреймы продуктов, категорий и их связи
-def join_product_and_category(product,category,product_category):
+def join_product_and_category(product, category, product_category):
   return product.join(product_category, product["id"]==product_category["product_id"], "left")\
   .select(col("name").alias("Имя продукта"), "category_id")\
   .join(category, category["id"]==product_category["category_id"], "left")\
