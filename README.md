@@ -1,6 +1,12 @@
 # PySpark Products and Categories join
 
+Метод для объединения двух датафреймов в PySpark (Продукты и Категории) с отношением многие-ко-многим.
 
+Метод возвращает датафрейм со столбцами Имя Продукта - Имя Категории.
+
+Использованные для примера CSV файлы прикреплены.
+
+_______________________________
 PySpark method to join two dataframes (Product and Category) that have a many-to-many relationship. 
 
 The method returns a dataframe with product names and category names.
